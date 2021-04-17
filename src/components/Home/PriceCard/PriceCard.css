@@ -1,0 +1,41 @@
+.priceCardImg{
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.priceCardImg div{
+    transition: all 0.2s;
+}
+.priceCardImg div img{
+    transition: all 0.2s;
+}
+.priceCard:hover .priceCardImg div{
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+.priceCard:hover .priceCardImg div img{
+    transform: rotate(-5deg);
+    transition: all 0.4s;
+}
+.priceCardBtn button{
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.priceCardBtn button:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.priceCard{
+    transition: all 0.2s;
+}
+.priceCard:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    transform: translateY(-1.5rem);
+    transition: all 0.4s;
+}
+.priceCard:hover div div{
+    color: rgb(251, 144, 43);
+}
+.packagePrice{
+    color: rgb(41, 241, 74);
+}

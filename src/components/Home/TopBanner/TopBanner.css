@@ -1,0 +1,30 @@
+.carouselImg{
+    height: 100vh;
+    position: relative;
+}
+.carouselImg img{
+    height: 100% !important;
+    position: absolute;
+}
+.carouselImg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+}
+.carousel-container div div div{
+    bottom: 40% !important;
+}
+.carousel-container div div div h3{
+    font-size: 2.5rem;
+    font-family: "Niconne",cursive;
+    font-weight: 700!important;
+}
+.carousel-container div div div p{
+    font-size: 2rem;
+    font-family: monospace;
+    color: #f0a73a;
+}
+

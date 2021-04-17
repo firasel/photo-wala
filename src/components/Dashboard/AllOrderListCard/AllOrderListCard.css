@@ -1,0 +1,30 @@
+.orderCardDesign{
+    overflow: hidden;
+    width: 100%;
+    background: whitesmoke;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.orderCardDesign:hover{
+    transform: scale(0.98);
+    background:rgb(255, 255, 255);
+    transition: all 0.4s;
+}
+.orderCardHeader img{
+    width: 8rem;
+    height: 8rem;
+    padding: .5rem;
+    border-radius: 15px;
+}
+.selectDesign{
+    width: 100%;
+    padding: .4rem;
+    font-weight: 600;
+    background: #585858;
+    color: white;
+    border-radius: 6px;
+}
+.selectDesign:hover {
+    background: #474747;
+    transition: all 0.3s;
+}

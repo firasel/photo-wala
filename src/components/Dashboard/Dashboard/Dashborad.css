@@ -1,0 +1,35 @@
+.dashboardNavbar{
+    margin: auto;
+}
+.dashboardContainer{
+    position: fixed;
+}
+.dashboardNavbar img{
+    width: 3rem;
+    padding-right: 8px;
+}
+.dashboardNavbar h3{
+    color: #e9e9e9;
+    font-size: 1.5rem!important;
+    font-family: "Niconne",cursive;
+    font-weight: 700!important;
+    text-shadow: 2px 2px 0 rgb(112 116 111 / 98%), 3px 3px 0 #343534;
+}
+.dashboardHeader{
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(120deg, blueviolet, rgb(45, 158, 202));
+}
+.dashboardNavBtn{
+    padding: 8px;
+    font-size: 1.2rem;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white !important;
+    font-weight: 600;
+    padding-left: 6px;
+    margin: 8px 0 8px 0;
+}
+.dashboardNavBtn:hover{
+    background: linear-gradient(120deg, rgb(105, 27, 177), rgb(25, 114, 149));
+}

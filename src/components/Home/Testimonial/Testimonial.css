@@ -1,0 +1,28 @@
+.testimonialHeader h2 {
+    position: relative;
+    font-family: revert;
+    color: black;
+    text-shadow: 2px 2px 5px #5a5a5a;
+}
+.testimonialHeader h2::after {
+    content: '';
+    width: 9%;
+    height: 3px;
+    background: #4a4a4a;
+    position: absolute;
+    left: 45.5%;
+    bottom: -10px;
+    z-index: 3;
+}
+
+.testimonialCarouselImg{
+    width: 8rem;
+    height: 8rem;
+    border: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonialCarouselImg img{
+    width: 100%;
+    height: 100%;
+}

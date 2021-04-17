@@ -1,0 +1,23 @@
+.packageHeader h2 {
+    position: relative;
+    font-family: revert;
+    color: #069b9b;
+    text-shadow: 3px 3px 8px #949494;
+}
+.packageHeader h2::after {
+    content: '';
+    width: 17%;
+    height: 3px;
+    background: #067070;
+    position: absolute;
+    left: 41.5%;
+    bottom: -3px;
+    z-index: 3;
+    transition: all 0.5s;
+    transform-origin: left;
+    transform: scale(0);
+}
+.packageContainer:hover .packageHeader h2::after{
+    transition: all 0.5s;
+    transform: scale(1);
+}

@@ -1,0 +1,27 @@
+.categoriesCard {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.categoriesCard img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    border-radius: 8px;
+}
+.categoriesCard:hover img {
+    opacity: 0.5;
+}
+
+.categoriesCard h4 {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    bottom: 0px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: cursive;
+}

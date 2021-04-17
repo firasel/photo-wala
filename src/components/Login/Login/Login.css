@@ -1,0 +1,28 @@
+.loginHeader img{
+    width: 10rem;
+}
+.loginHeader h3 {
+    color: #141414;
+    font-size: 2.8rem!important;
+    font-family: "Niconne",cursive;
+    font-weight: 700!important;
+    text-shadow: 2px 2px 0 rgb(114 255 79 / 98%), 3px 3px 0 #29ff29;
+    cursor: pointer;
+}
+.signInBtn {
+    background: #c9c9c9;
+    border: 0;
+    border-radius: 42px;
+    font-weight: 600;
+}
+.signInBtn h5{
+    font-weight: 700;
+    padding-right: 10px;
+}
+.signInBtn img{
+    transition: 0.5s;
+}
+.signInBtn:hover img{
+    transform: rotate(360deg);
+    transition: all 0.7s;
+}
