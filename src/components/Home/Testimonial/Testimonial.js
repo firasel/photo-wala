@@ -26,7 +26,7 @@ const Testimonial = () => {
                     <h6>MY CLIENTS</h6>
                     <h2>TESTIMONIAL</h2>
                 </div>
-                <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={2000} >
+                <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={4000} >
                     {
                         allReviewData.map(data=><TestimonialCard key={data._id} testimonial={data}/>)
                     }

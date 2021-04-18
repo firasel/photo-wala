@@ -44,6 +44,7 @@ const Dashboard = () => {
                         {
                             !isAdmin ?
                             <div>
+                                <Button as={Link} to='/dashboard/order' variant='none' className='dashboardNavBtn w-100'>Order</Button>
                                 <Button as={Link} to='/dashboard/orderlist' variant='none' className='dashboardNavBtn w-100'>Order List</Button>
                                 <Button as={Link} to='/dashboard/review' variant='none' className='dashboardNavBtn w-100'>Review</Button>
                             </div>
@@ -63,6 +64,9 @@ const Dashboard = () => {
                         <Home/>
                     </Route>
                     <Route path='/dashboard/order/:id'>
+                        <Order/>
+                    </Route>
+                    <Route path='/dashboard/order'>
                         <Order/>
                     </Route>
                     <Route path='/dashboard/orderlist'>

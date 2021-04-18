@@ -47,7 +47,7 @@ const AllOrderListCard = ({orderDetails}) => {
                         </select>
                     </div>
                 </Col>
-                <Col md={12} className='d-flex justify-content-between align-items-center'>
+                <Col md={12} className='d-flex justify-content-between align-items-center pb-1'>
                     <span>Name: {orderDetails.name}</span>
                     <span>Email: {orderDetails.email}</span>
                     <span>PlacedOn: {orderDetails.time}</span>

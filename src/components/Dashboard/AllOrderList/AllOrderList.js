@@ -7,7 +7,7 @@ const AllOrderList = () => {
     useEffect(()=>{
         fetch('https://photowalaapi.herokuapp.com/allOrderData')
         .then(res=>res.json())
-        .then(data=>setAllOrderData(data))
+        .then(data=>setAllOrderData(data.reverse()))
     },[])
 
     return (

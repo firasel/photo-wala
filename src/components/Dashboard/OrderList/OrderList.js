@@ -14,7 +14,7 @@ const OrderList = () => {
             body:JSON.stringify(loggedInUser)
         })
         .then(res=>res.json())
-        .then(data=>setOrdersData(data))
+        .then(data=>setOrdersData(data.reverse()))
     },[])
 
     return (
