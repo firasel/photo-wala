@@ -8,7 +8,7 @@ const Order = () => {
     const {id}=useParams();
     const [packageData,setPackageData]=useState({});
     useEffect(()=>{
-        fetch(`http://localhost:3001/loadData/${id}`)
+        fetch(`https://photowalaapi.herokuapp.com/loadData/${id}`)
         .then(res=>res.json())
         .then(data=>setPackageData(data));
     },[])
@@ -26,7 +26,7 @@ const Order = () => {
         orderData.imgURL=packageData.imgURL;
         orderData.packageName=packageData.packageName;
         orderData.price=packageData.price
-        fetch('http://localhost:3001/order',{
+        fetch('https://photowalaapi.herokuapp.com/order',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(orderData)

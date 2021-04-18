@@ -15,7 +15,7 @@ const Testimonial = () => {
 
     const [allReviewData,setAllReviewData]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:3001/reviews')
+        fetch('https://photowalaapi.herokuapp.com/reviews')
         .then(res=>res.json())
         .then(data=>setAllReviewData(data))
     },[])

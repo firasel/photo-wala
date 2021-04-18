@@ -8,7 +8,7 @@ const OrderList = () => {
     const [ordersData,setOrdersData]=useState([]);
     const [loggedInUser,setLoggedInUser]=useContext(UserContext);
     useEffect(()=>{
-        fetch('http://localhost:3001/orderData',{
+        fetch('https://photowalaapi.herokuapp.com/orderData',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(loggedInUser)

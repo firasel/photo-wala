@@ -10,7 +10,7 @@ const AddCategories = () => {
     
     const onSubmit=data=>{
         data.imgURL=imageUrl;
-        fetch('http://localhost:3001/addCategories',{
+        fetch('https://photowalaapi.herokuapp.com/addCategories',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(data)

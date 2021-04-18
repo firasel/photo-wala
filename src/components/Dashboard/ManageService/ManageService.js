@@ -5,7 +5,7 @@ import ManageServiceCard from '../ManageServiceCard/ManageServiceCard';
 const ManageService = () => {
     const [allServiceData,setAllServiceData]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:3001/packages')
+        fetch('https://photowalaapi.herokuapp.com/packages')
         .then(res=>res.json())
         .then(data=>{
             setAllServiceData(data);

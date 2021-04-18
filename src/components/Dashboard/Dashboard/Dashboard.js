@@ -23,7 +23,7 @@ const Dashboard = () => {
     const [loggedInUser,setLoggedInUser]=useContext(UserContext);
     const [isAdmin,setIsAdmin]=useState(false);
     useEffect(()=>{
-        fetch('http://localhost:3001/checkAdmin',{
+        fetch('https://photowalaapi.herokuapp.com/checkAdmin',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(loggedInUser)

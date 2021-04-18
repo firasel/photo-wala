@@ -7,7 +7,7 @@ import './ManageServiceCard.css';
 const ManageServiceCard = ({serviceData}) => {
 
     const handleDeleteBtn=()=>{
-        fetch(`http://localhost:3001/deletePackage/${serviceData._id}`,{
+        fetch(`https://photowalaapi.herokuapp.com/deletePackage/${serviceData._id}`,{
             method:'DELETE',
             headers:{'Content-Type':'application/json'}
         }).then(res=>res.json())

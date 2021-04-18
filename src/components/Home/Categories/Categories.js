@@ -5,7 +5,7 @@ import CategoriesCard from '../CategoriesCard/CategoriesCard';
 const Categories = () => {
     const [catagoriesData,setCatagoriesData]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:3001/categories')
+        fetch('https://photowalaapi.herokuapp.com/categories')
         .then(res=>res.json())
         .then(data=>setCatagoriesData(data));
     },[])

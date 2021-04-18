@@ -11,7 +11,7 @@ const Review = () => {
     const onSubmit=data=>{
         data.imgURL=imageUrl;
         data.time=(new Date()).toLocaleString();
-        fetch('http://localhost:3001/addReview',{
+        fetch('https://photowalaapi.herokuapp.com/addReview',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(data)

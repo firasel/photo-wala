@@ -17,7 +17,7 @@ const AllOrderListCard = ({orderDetails}) => {
     const handleOrderStatus=event=>{
         const status=event.target.value;
         const newStatusData={status:status,id:orderDetails._id}
-        fetch('http://localhost:3001/updateStatus',{
+        fetch('https://photowalaapi.herokuapp.com/updateStatus',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(newStatusData)

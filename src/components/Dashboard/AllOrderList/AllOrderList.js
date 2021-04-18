@@ -5,7 +5,7 @@ import AllOrderListCard from '../AllOrderListCard/AllOrderListCard';
 const AllOrderList = () => {
     const [allOrderData,setAllOrderData]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:3001/allOrderData')
+        fetch('https://photowalaapi.herokuapp.com/allOrderData')
         .then(res=>res.json())
         .then(data=>setAllOrderData(data))
     },[])

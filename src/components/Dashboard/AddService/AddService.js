@@ -9,7 +9,7 @@ const AddService = () => {
     
     const onSubmit=data=>{
         data.imgURL=imageUrl;
-        fetch('http://localhost:3001/addPackage',{
+        fetch('https://photowalaapi.herokuapp.com/addPackage',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(data)
