@@ -1,3 +1,5 @@
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Button, Col, Form, Row, Spinner } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
@@ -74,7 +76,7 @@ const AddService = () => {
                                 </div>
                             </Form.Group>
                             <div style={{textAlign:'end'}}>
-                                <Button variant='dark' className='ml-auto pl-4 pr-4 pt-2 pb-2' type='submit'>Add Package</Button>
+                                <Button variant='dark' className='ml-auto pl-4 pr-4 pt-2 pb-2' type='submit'><FontAwesomeIcon icon={faPlus} /> Add Package</Button>
                             </div>
                         </Form>
                     </Col>

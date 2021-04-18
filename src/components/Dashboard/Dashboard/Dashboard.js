@@ -1,3 +1,5 @@
+import { faBook, faCommentAlt, faHome, faPlus, faThLarge, faThList, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext, useEffect, useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import {
@@ -40,21 +42,21 @@ const Dashboard = () => {
                             <img src="https://i.ibb.co/TBDZwFB/camera-Logo-min-removebg-preview.png" alt="navbarImg"/>
                             <h3>PhotoWala</h3>
                         </div>
-                        <Button onClick={()=>history.push('/home')} variant='none' className='dashboardNavBtn w-100'>Home</Button>
+                        <Button onClick={()=>history.push('/home')} variant='none' className='dashboardNavBtn w-100'><FontAwesomeIcon icon={faHome} /> Home</Button>
                         {
                             !isAdmin ?
                             <div>
-                                <Button as={Link} to='/dashboard/order' variant='none' className='dashboardNavBtn w-100'>Order</Button>
-                                <Button as={Link} to='/dashboard/orderlist' variant='none' className='dashboardNavBtn w-100'>Order List</Button>
-                                <Button as={Link} to='/dashboard/review' variant='none' className='dashboardNavBtn w-100'>Review</Button>
+                                <Button as={Link} to='/dashboard/order' variant='none' className='dashboardNavBtn w-100'><FontAwesomeIcon icon={faBook}/> Order</Button>
+                                <Button as={Link} to='/dashboard/orderlist' variant='none' className='dashboardNavBtn w-100'><FontAwesomeIcon icon={faThList}/> Order List</Button>
+                                <Button as={Link} to='/dashboard/review' variant='none' className='dashboardNavBtn w-100'><FontAwesomeIcon icon={faCommentAlt}/> Review</Button>
                             </div>
                             :
                             <div>
-                                <Button as={Link} to='/dashboard/allorders' variant='none' className='dashboardNavBtn w-100'>Order List</Button>
-                                <Button as={Link} to='/dashboard/addservice' variant='none' className='dashboardNavBtn w-100'>Add Service</Button>
-                                <Button as={Link} to='/dashboard/makeadmin' variant='none' className='dashboardNavBtn w-100'>Make Admin</Button>
-                                <Button as={Link} to='/dashboard/manageservice' variant='none' className='dashboardNavBtn w-100'>Manage Services</Button>
-                                <Button as={Link} to='/dashboard/addcategories' variant='none' className='dashboardNavBtn w-100'>Add Categories</Button>
+                                <Button as={Link} to='/dashboard/allorders' variant='none' className='dashboardNavBtn w-100'><FontAwesomeIcon icon={faThList}/> Order List</Button>
+                                <Button as={Link} to='/dashboard/addservice' variant='none' className='dashboardNavBtn w-100'><FontAwesomeIcon icon={faPlus}/> Add Service</Button>
+                                <Button as={Link} to='/dashboard/makeadmin' variant='none' className='dashboardNavBtn w-100'><FontAwesomeIcon icon={faUserPlus}/> Make Admin</Button>
+                                <Button as={Link} to='/dashboard/manageservice' variant='none' className='dashboardNavBtn w-100'><FontAwesomeIcon icon={faThLarge}/> Manage Services</Button>
+                                <Button as={Link} to='/dashboard/addcategories' variant='none' className='dashboardNavBtn w-100'><FontAwesomeIcon icon={faPlus}/> Add Categories</Button>
                             </div>
                         }
                     </div>

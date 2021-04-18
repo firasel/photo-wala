@@ -1,3 +1,5 @@
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -18,7 +20,7 @@ const PriceCard = ({packageDetail}) => {
                 </Card.Body>
                 <h3 className='packagePrice'>${packageDetail.price}</h3>
                 <Card.Footer className='priceCardBtn mb-2' style={{border:'0',background:'none'}}>
-                    <Button as={Link} to={`/dashboard/order/${packageDetail._id}`} variant='dark' className='m-auto'>ByeNow</Button>
+                    <Button as={Link} to={`/dashboard/order/${packageDetail._id}`} variant='dark' className='m-auto'><FontAwesomeIcon icon={faShoppingCart} /> ByeNow</Button>
                 </Card.Footer>
             </Card>
         </Col>

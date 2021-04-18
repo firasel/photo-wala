@@ -1,3 +1,5 @@
+import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
@@ -31,7 +33,7 @@ const MakeAdmin = () => {
                                 {errors.email && <span className='text-danger'>Email is required</span>}
                             </Form.Group>
                             <div style={{textAlign:'end'}}>
-                                <Button variant='dark' className='ml-auto pl-4 pr-4 pt-2 pb-2' type='submit'>Add Admin</Button>
+                                <Button variant='dark' className='ml-auto pl-4 pr-4 pt-2 pb-2' type='submit'><FontAwesomeIcon icon={faUserPlus}/> Add Admin</Button>
                             </div>
                         </Form>
                     </Col>
