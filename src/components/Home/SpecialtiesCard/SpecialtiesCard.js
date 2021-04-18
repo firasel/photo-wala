@@ -4,7 +4,7 @@ import './SpecialtiesCard.css';
 
 const SpecialtiesCard = ({specialData}) => {
     return (
-        <Col xs={10} sm={6} md={4}>
+        <Col className='m-auto' xs={10} sm={6} md={4}>
         <div className='text-center specialtiesCard p-1'>
             <div className='p-4'>
                 <div className='specialCardImg'>

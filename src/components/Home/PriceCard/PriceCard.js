@@ -5,7 +5,7 @@ import './PriceCard.css';
 
 const PriceCard = ({packageDetail}) => {
     return (
-        <Col xs={10} sm={5} md={4}>
+        <Col className='m-auto pb-4' xs={10} sm={5} md={4}>
             <Card className='priceCard h-100'>
                 <div className='priceCardImg'>
                     <div>

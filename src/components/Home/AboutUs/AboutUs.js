@@ -7,7 +7,7 @@ const AboutUs = () => {
     return (
         <div className='mt-5'>
             <Row className='d-flex align-items-center m-0'>
-                <Col xs={10} md={6}>
+                <Col xs={10} md={6} className='m-auto'>
                     <div className='text-center p-3'>
                         <h4 className='mb-3'>About Us</h4>
                         <h3 style={{fontSize:'2.5rem',fontFamily:"Niconne,cursive"}}>Forhad Islam Rasel</h3>
@@ -15,7 +15,7 @@ const AboutUs = () => {
                         <Button className='mt-3' variant='dark'> <FontAwesomeIcon icon={faChevronRight}/> Know More</Button>
                     </div>
                 </Col>
-                <Col xs={10} md={6} className='p-0'>
+                <Col xs={12} md={6} className='p-0'>
                     <img style={{width:'100%'}} src="https://i.ibb.co/LZ6nFks/about-Photo.jpg" alt=""/>
                 </Col>
             </Row>
