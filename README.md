@@ -2,13 +2,12 @@
 ### This is an Phootowala website
 # [Live Link](https://photowala-8e5ab.web.app/)
 ## Features
-- ## User account
-- ## Admin account
-- ## review section
-- ## catagories section
-- ## order/packages section
-- ## About us
-- ## Footer
+- ## The user can log in with firebase if he wants and The user can log out if he wants.
+- ## If the admin logs in, the dashboard will show different options than the average user.
+- ## If the admin wants, he can go to the dashboard and add and remove the service.
+- ## The admin can see all the orders of the customer and can update the order status if he wants.
+- ## The user can order any service if he wants and he can only see his orders when he goes to the order history.
+- ## Users can give reviews about the service if they want and the reviews will show on the website.
 
 ## Using Technology
 - react js
@@ -27,4 +26,8 @@ https://photowala-8e5ab.web.app/
 Api Link:
 ```sh
 https://photowalaapi.herokuapp.com/
+```
+Backend Code:
+```sh
+https://github.com/firasel/photowala-server-side.git
 ```
